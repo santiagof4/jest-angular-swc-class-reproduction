@@ -7,8 +7,8 @@ export default {
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   coverageDirectory: './coverage/jest-angular-swc-class-reproduction',
   transform: {
-    //'^.+\\.(ts|mjs|js)$': swcAngularJestTransformer(),
-    '^.+\\.(ts|mjs|js|html)$':
+    '^.+\\.(ts|mjs|js)$': swcAngularJestTransformer(),
+    '^.+\\.(html)$':
       [
         'jest-preset-angular',
         {
